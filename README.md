@@ -1,4 +1,4 @@
-# spi-base
+﻿# spi-base
 Sous ensemble du socle utilisé par les étudiants pour leurs projets de simulation d'entreprise.
 
 ## Partie Java
@@ -20,4 +20,4 @@ Application AngularJS 1.2 + bower
 `bower install`
 
 ### Démarrage
-Après avoir démarré l'aplication springboot, le site est disponible sur http://localhost:8090/index.html
+Après avoir démarré l'aplication springboot, le site est disponible sur http://localhost:8181/index.html

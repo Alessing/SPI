@@ -1,0 +1,103 @@
+			<!-- ============================================================== -->
+			<!-- Start right Content here -->
+			<!-- ============================================================== -->
+			<div class="content-page">
+				<!-- Start content -->
+				<div class="content">
+					<div class="container">
+
+						<!-- Page-Title -->
+						<div class="row">
+							<div class="col-sm-12">
+								<h4 class="page-title">Enseignants</h4>
+                                <br>
+							</div>
+						</div>
+
+
+
+                        <div class="panel">
+                            
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-">
+                                        <div align="center" class="m-b-30">
+                                            <img  src="bower_components/assets/images/man.png"  >
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                
+
+								
+                                <div class="form-group">
+                                    <div class="col-sm-3">
+                                        <span style="margin-right:20px" class ="glyphicon glyphicon-user" /><label class="control-label">Nom </label>
+                                    </div>   
+                                    <p> {{enseignantdetails.prenom}} {{enseignantdetails.nom}}</p>       
+                                </div><hr>
+                                <div class="form-group">
+                                    <div class="col-sm-3">
+                                        <span style="margin-right:20px" class ="glyphicon glyphicon-home" /><label class="control-label">Adresse</label>
+                                    </div>   
+                                    <p> {{enseignantdetails.adresse}}, {{enseignantdetails.codePostal}} {{enseignantdetails.ville}} {{enseignantdetails.pays}}</p>       
+                                </div><hr>
+                                <div class="form-group">
+                                    <div class="col-sm-3">
+                                        <span style="margin-right:20px" class ="glyphicon glyphicon-envelope" /><label class="control-label">Email</label>
+                                    </div>   
+                                    <p> {{enseignantdetails.emailUbo}} / {{enseignantdetails.emailPerso}}</p>    
+                                </div><hr>
+                                <div class="form-group">
+                                    <div class="col-sm-3">
+                                        <span style="margin-right:20px" class ="glyphicon glyphicon-earphone" /><label class="control-label">Telephone</label>
+                                    </div>   
+                                    <p> {{enseignantdetails.mobile}} / {{enseignantdetails.telephone}} </p>       
+                                </div><hr><br>
+                               
+                                <h2 ng-if="proms[0] != null"align="center"> <i class="fa fa-graduation-cap fx-3"></i> Promotions</h2>
+                               <table ng-if="proms[0] != null" class="table  table-bordered">
+	                                    <thead >	 
+											<tr class="active">
+                                                <th> Code Formation </th>
+                                                <th> Année Universitaire </th>
+												<th> nbMaxEtudiant </th>
+											</tr>
+										</thead>
+                                        
+                                        <tbody ng-repeat="p in proms">
+                                            <tr>
+                                                <td> {{p.id.codeFormation}}</td>
+                                                <td> {{p.id.anneeUniversitaire}}</td>
+                                                <td> {{p.nbMaxEtudiant}}</td>
+                                                
+                                            </tr>
+                                        </tbody>
+									</table>
+                              
+
+                            <a ui-sref="^" ><button  align="right" style="float:right;" class="btn btn-danger"  > <i class="fa fa-arrow-left"></i> Annuler </button></a>
+
+							</div><!-- end: page -->
+						</div> <!-- end Panel -->
+					</div> <!-- container -->
+				</div> <!-- content -->
+
+				
+				
+			</div>
+			<!-- ============================================================== -->
+			<!-- End Right content here -->
+			<!-- ============================================================== -->
+
+		
+
+		</div>
+        <!-- END wrapper -->
+    
+      
+       
+
+ <script>
+            var resizefunc = [];
+        </script>
